@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import Header from './components/header';
-import ChatArea from './chatArea';
+import { BrowserRouter as Router } from 'react-router-dom'
+import Main from './components/Main';
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Header />
-        <ChatArea />
-      </React.Fragment>
+      <Router>
+
+      <Main />
+      </Router>
+
     );
   }
 }

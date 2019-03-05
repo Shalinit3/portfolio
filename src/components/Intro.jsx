@@ -25,13 +25,13 @@ class Intro extends Component {
       <Paper className={classes.paper} >
         <Typography variant="subtitle1" className={classes.colorWhite} gutterBottom>
           Hello, My name is Shalini Tyagi and
-                  </Typography>
+        </Typography>
         <Typography component="h4" variant="h3" className={classes.colorWhite} gutterBottom>
           I AM A FULLSTACK DEVELOPER
-                  </Typography>
+        </Typography>
         <Typography variant="subtitle2" className={classes.colorWhite} gutterBottom>
           Creating modern and responsive design for web
-                  </Typography>
+        </Typography>
       </Paper>
     );
   }

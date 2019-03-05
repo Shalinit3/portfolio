@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -9,7 +9,6 @@ import IconBar from './IconBars';
 import Intro from './Intro';
 import Work from './Work';
 import Hidden from '@material-ui/core/Hidden';
-
 
 const styles = theme => ({
   root: {
@@ -28,6 +27,7 @@ const styles = theme => ({
   },
   control: {
     height: '100%',
+    paddingTop: '48px',
     [theme.breakpoints.up('sm')]: {
       paddingTop: theme.spacing.unit * 4,
       paddingBottom: theme.spacing.unit * 4,
@@ -54,10 +54,10 @@ class Main extends Component {
                   <IconBar />
                 </Grid>
               </Hidden>
+              <Grid item xs={12} sm={11} md={11} lg={11}>
               <Hidden smUp>
                 <Header />
               </Hidden>
-              <Grid item xs={12} sm={11} md={11} lg={11}>
                 <Route exact path="/" component={Intro} />
                 <Route path="/work" component={Work} />
                 <Route path="/blog" component={Work} />

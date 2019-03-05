@@ -31,26 +31,34 @@ function IconBar(props) {
       <MenuList>
         <MenuItem className={classes.listItem}>
           <ListItemIcon  >
+            <a href="https://twitter.com/@shalinity" >
             <img
-              src="https://img.icons8.com/color/30/000000/twitter-squared.png"
-              alt="Twitter Icon"
+            src="https://uploads-ssl.webflow.com/59a7431fcef5f30001a9cdb9/5b298a6f6677a53087f7fbc7_twitter.svg"       
+            alt="Twitter Icon"
             />
+            </a>
           </ListItemIcon>
         </MenuItem>
         <MenuItem className={classes.listItem}>
           <ListItemIcon  >
+            <a href="https://www.linkedin.com/in/shalini-tyagi-0b2442120/">
             <img
-              src="https://img.icons8.com/color/30/000000/linkedin.png"
+              src="https://uploads-ssl.webflow.com/59a7431fcef5f30001a9cdb9/5b298a6e73a60ed9406cd954_linkedin.svg"
               alt="LinkedIn Icon"
             />
+            </a>
+           
           </ListItemIcon>
         </MenuItem>
         <MenuItem className={classes.listItem}>
           <ListItemIcon  >
+            <a href="https://github.com/Shalinit3">
             <img
-              src="https://img.icons8.com/ios/30/000000/medium.png"
-              alt="Medium Icon"
+              src="https://img.icons8.com/color/30/000000/git.png"
+              alt="Git Icon"
             />
+            </a>
+           
           </ListItemIcon>
         </MenuItem>
       </MenuList>

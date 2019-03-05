@@ -17,6 +17,7 @@ import Typography from "@material-ui/core/Typography";
 import Hidden from '@material-ui/core/Hidden';
 
 const drawerWidth = 240;
+
 const styles = theme => ({
   root: {
     display: "flex",
@@ -34,7 +35,6 @@ const styles = theme => ({
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen
@@ -119,7 +119,7 @@ class Header extends Component {
       <div className={classes.root}>
         <CssBaseline />
         <Hidden smUp>
-          <AppBar>
+          <AppBar className={classes.appBar}>
             <Toolbar variant="dense">
               <IconButton
                 color="inherit"
@@ -133,7 +133,6 @@ class Header extends Component {
           </AppBar>
         </Hidden>
         <Hidden xsDown>
-
           <IconButton
             color="inherit"
             aria-label="Open drawer"
@@ -161,8 +160,8 @@ class Header extends Component {
           <Divider />
           <List>
             {["My Story", "Work", "Blog"].map(text => (
-              <ListItem button key={text}>
-                <Link to={`/${text.toLowerCase()}`} style={{testDecoration: 'none' }}>
+              <ListItem button key={text} onClick={this.handleDrawerClose}>
+                <Link to={`/${text.toLowerCase()}`} style={{ textDecoration: 'none' }}>
                   <Typography className={classes.largeItem}>{text}</Typography>
                 </Link>
               </ListItem>
@@ -170,9 +169,9 @@ class Header extends Component {
           </List>
           <Divider className={classes.divider} />
           <List>
-            {["Contact", "Resources", "Reading List"].map(text => (
-              <ListItem button key={text}>
-                <Link to={`/${text.toLowerCase()}`} style={{testDecoration: 'none' }}>
+            {["Contact", "Skills", "Reading List"].map(text => (
+              <ListItem button key={text} onClick={this.handleDrawerClose}>
+                <Link to={`/${text.toLowerCase()}`} style={{ textDecoration: 'none' }}>
                 <Typography className={classes.smallItem}>{text}</Typography>
                 </Link>
               </ListItem>

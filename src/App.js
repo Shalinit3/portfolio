@@ -6,7 +6,7 @@ import Main from './components/Main';
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: '"Product Sans", serif',
+    fontFamily: 'inherit',
   },
 });
 

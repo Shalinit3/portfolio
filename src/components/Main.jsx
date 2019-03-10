@@ -4,13 +4,31 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Hidden from '@material-ui/core/Hidden';
 import Header from './Header';
 import IconBar from './IconBars';
 import Intro from './Intro';
 import Work from './Work';
-import Hidden from '@material-ui/core/Hidden';
+import Skills from './Skills';
+import Contact from './Contact';
 
 const styles = theme => ({
+  '@global': {
+    '*::-webkit-scrollbar': {
+      width: '0.4em'
+    },
+    '*::-webkit-scrollbar-track': {
+      '-webkit-box-shadow': 'inset 0 0 6px rgba(0,0,0,0.00)',
+      border: 'solid 3px transparent'
+    },
+    '*::-webkit-scrollbar-thumb': {
+      backgroundColor: '#FE6B8B',
+      outline: '2px solid slategrey',
+      borderRadius: '5px',
+      borderLeft: 'solid 3px transparent'
+
+    }
+  },
   root: {
     flexGrow: 1,
     height: '100vh',
@@ -62,6 +80,8 @@ class Main extends Component {
                 <Route path="/work" component={Work} />
                 <Route path="/blog" component={Work} />
                 <Route path="/my story" component={Intro} />
+                <Route path="/skills" component={Skills} />
+                <Route path="/contact" component={Contact} />
               </Grid>
             </Grid>
           </Paper>

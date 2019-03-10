@@ -16,16 +16,16 @@ const AnimatedText = () => {
                 </defs>
                 <text fontSize="26" filter="url(#solid)">
                     <textPath xlinkHref="#path">
-                        <tspan fontSize="15" x="1.2em" dy="1.5em" fill="white">Hello, My name is Shalini Tyagi and</tspan>
-                        <tspan fontSize="18" x="1.2em" dy="1.5em" fill="#42c58a">I AM A FULLSTACK DEVELOPER</tspan>
-                        <tspan fontSize="16" x="1.2em" dy="1.5em" fill="white">Creating modern and responsive design for Web.</tspan>
+                        <tspan fontSize="15" x="1.2em" dy="1.5em" fill="white">&lt;hello, My name is Shalini Tyagi /&gt;</tspan>
+                        <tspan fontSize="18" x="1.2em" dy="1.5em" fill="#42c58a">&lt;i am a fullstack developer /&gt;</tspan>
+                        <tspan fontSize="16" x="1.2em" dy="1.5em" fill="white">&lt;creating modern and responsive design for Web /&gt;</tspan>
                     </textPath>
                 </text>
                 <text fontSize="26">
                     <textPath xlinkHref="#path">
-                        <tspan fontSize="15" x="1.2em" dy="1.5em" fill="white">Hello, My name is Shalini Tyagi and</tspan>
-                        <tspan fontSize="18" x="1.2em" dy="1.5em" fill="#42c58a">I AM A FULLSTACK DEVELOPER</tspan>
-                        <tspan fontSize="16" x="1.2em" dy="1.5em" fill="white">Creating modern and responsive design for Web.</tspan>
+                        <tspan fontSize="15" x="1.2em" dy="1.5em" fill="white">&lt;hello, My name is Shalini Tyagi /&gt;</tspan>
+                        <tspan fontSize="18" x="1.2em" dy="1.5em" fill="#42c58a">&lt;i am a fullstack developer /&gt;</tspan>
+                        <tspan fontSize="16" x="1.2em" dy="1.5em" fill="white">&lt;creating modern and responsive design for Web /&gt;</tspan>
                     </textPath>
                 </text>
             </svg >

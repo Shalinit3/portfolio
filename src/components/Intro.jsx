@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import Typography from "@material-ui/core/Typography";
+import AnimatedText from './AnimatedText';
 
 const styles = () => ({
   paper: {
@@ -23,16 +23,8 @@ class Intro extends Component {
     const { classes } = this.props;
     return (
       <Paper className={classes.paper} >
-        <Typography variant="subtitle1" className={classes.colorWhite} gutterBottom>
-          Hello, My name is Shalini Tyagi and
-        </Typography>
-        <Typography component="h4" variant="h3" className={classes.colorWhite} gutterBottom>
-          I AM A FULLSTACK DEVELOPER
-        </Typography>
-        <Typography variant="subtitle2" className={classes.colorWhite} gutterBottom>
-          Creating modern and responsive design for web
-        </Typography>
-      </Paper>
+       <AnimatedText  />
+      </Paper >
     );
   }
 }

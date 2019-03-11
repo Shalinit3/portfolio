@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const AnimatedText = () => {
     return (
         <div>
-            <svg viewBox="-40 -20 600 300" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
+            <svg viewBox="-40 -20 600 250" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1">
                 <path id="path">
                     <animate attributeName="d" from="m10,60 h0" to="m10,60 h1100" dur="15s" begin="0s" repeatCount="indefinite" />
                 </path>

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Icon from '@material-ui/core/Icon';
+import Button from '@material-ui/core/Button';
 import AnimatedText from './AnimatedText';
 
 const styles = () => ({
@@ -15,7 +17,23 @@ const styles = () => ({
   },
   colorWhite: {
     color: '#fff',
-  }
+  },
+  controls: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  button: {
+    marginLeft: '5%',
+    marginTop: '20px',
+    background: 'transparent',
+    border: '1px solid white',
+    borderRadius: 3,
+    color: 'white',
+    height: 48,
+    '&:hover': {
+      background: 'transparent',
+    }
+  },
 });
 class Intro extends Component {
 
@@ -24,6 +42,14 @@ class Intro extends Component {
     return (
       <Paper className={classes.paper} >
        <AnimatedText  />
+       <div className={classes.controls}>
+              <Button variant="contained" href={'https://www.linkedin.com/in/shalini-tyagi-0b2442120/'} className={classes.button}>
+                Download Resume
+                <Icon className={classes.rightIcon}>
+                vertical_align_bottom
+                </Icon>
+              </Button>
+            </div>
       </Paper >
     );
   }

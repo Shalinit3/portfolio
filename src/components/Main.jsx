@@ -11,6 +11,7 @@ import Intro from './Intro';
 import Work from './Blogs';
 import Skills from './Skills';
 import Contact from './Contact';
+import Experience from './Experience';
 
 const styles = theme => ({
   '@global': {
@@ -82,6 +83,7 @@ class Main extends Component {
                 <Route path="/my story" component={Intro} />
                 <Route path="/skills" component={Skills} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/experience" component={Experience} />
               </Grid>
             </Grid>
           </Paper>

@@ -62,45 +62,21 @@ const styles = (theme) => ({
     }
   }
 });
-class Work extends Component {
+class Blog extends Component {
 
   render() {
     const { classes } = this.props;
 
-    const imageUrl = 'https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-    const title = 'Mock Image';
     const tileData = [
       {
-        img: imageUrl,
-        title,
-        author: 'Shalini Tyagi',
-        featured: true
+        img: 'https://cdn-images-1.medium.com/max/800/1*FdXx2n2HZN-zuJiyFMgXlQ.jpeg',
+        title:'Immutability Changes Everything',
+        published: 'Feb 18, 2019',
       },
-      {
-        img: imageUrl,
-        title,
-        author: 'Shalini Tyagi'
-      },
-      // {
-      //   img: imageUrl,
-      //   title,
-      //   author: 'Shalini Tyagi'
-      // },
-      // {
-      //   img: imageUrl,
-      //   title,
-      //   author: 'Shalini Tyagi',
-      //   featured: true
-      // },
-      // {
-      //   img: imageUrl,
-      //   title,
-      //   author: 'Shalini Tyagi'
-      // }
     ]
     return (
       <Paper className={classes.paper} >
-        <Heading text="Work" />
+        <Heading text="Blogs" />
         <GridList cellHeight={200} spacing={1} className={classes.gridList}>
           {tileData.map(tile => (
             <GridListTile key={tile.img} cols={2} rows={2} className={classes.gridItem} >
@@ -108,6 +84,7 @@ class Work extends Component {
               <GridListTileBar
                 title={tile.title}
                 titlePosition="bottom"
+                subtitle={tile.published}
                 actionIcon={
                   <IconButton className={classes.icon}>
                     <InfoIcon />
@@ -123,8 +100,8 @@ class Work extends Component {
   }
 }
 
-Work.propTypes = {
+Blog.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Work);
+export default withStyles(styles)(Blog);

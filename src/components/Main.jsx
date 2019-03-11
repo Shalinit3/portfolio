@@ -8,7 +8,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Header from './Header';
 import IconBar from './IconBars';
 import Intro from './Intro';
-import Work from './Work';
+import Work from './Blogs';
 import Skills from './Skills';
 import Contact from './Contact';
 

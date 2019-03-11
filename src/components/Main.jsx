@@ -8,7 +8,8 @@ import Hidden from '@material-ui/core/Hidden';
 import Header from './Header';
 import IconBar from './IconBars';
 import Intro from './Intro';
-import Work from './Blogs';
+import Blog from './Blogs';
+import Work from './Work';
 import Skills from './Skills';
 import Contact from './Contact';
 import Experience from './Experience';
@@ -79,7 +80,7 @@ class Main extends Component {
               </Hidden>
                 <Route exact path="/" component={Intro} />
                 <Route path="/work" component={Work} />
-                <Route path="/blog" component={Work} />
+                <Route path="/blog" component={Blog} />
                 <Route path="/my story" component={Intro} />
                 <Route path="/skills" component={Skills} />
                 <Route path="/contact" component={Contact} />

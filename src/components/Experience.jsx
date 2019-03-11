@@ -109,7 +109,7 @@ class Experience extends Component {
               </Button>
             </div>
           </Grid>
-          <Grid item lg={5} md={5} xs={11} style={{ marginTop: 10 }}>
+          <Grid item lg={5} md={5} xs={11} style={{ marginTop: 10, marginBottom:20 }}>
             <Stepper  orientation="vertical" className={classes.stepper}>
               {experience.map((company) => (
                 <Step key={company.name} completed>

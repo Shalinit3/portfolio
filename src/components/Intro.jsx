@@ -43,7 +43,7 @@ class Intro extends Component {
       <Paper className={classes.paper} >
        <AnimatedText  />
        <div className={classes.controls}>
-              <Button variant="contained" href={'https://www.linkedin.com/in/shalini-tyagi-0b2442120/'} className={classes.button}>
+              <Button variant="contained" href={'https://dl.dropboxusercontent.com/s/ck82u92iulff8l6/Profile.pdf?dl=0'} className={classes.button}>
                 Download Resume
                 <Icon className={classes.rightIcon}>
                 vertical_align_bottom

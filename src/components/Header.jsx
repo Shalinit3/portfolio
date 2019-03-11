@@ -159,7 +159,7 @@ class Header extends Component {
           </div>
           <Divider />
           <List>
-            {["My Story", "Work", "Blog"].map(text => (
+            {["My Story", "Experience", "Skills"].map(text => (
               <ListItem button key={text} onClick={this.handleDrawerClose}>
                 <Link to={`/${text.toLowerCase()}`} style={{ textDecoration: 'none' }}>
                   <Typography className={classes.largeItem}>{text}</Typography>
@@ -169,7 +169,7 @@ class Header extends Component {
           </List>
           <Divider className={classes.divider} />
           <List>
-            {["Contact", "Skills", "Experience"].map(text => (
+            {["Contact", "Blog", "Work"].map(text => (
               <ListItem button key={text} onClick={this.handleDrawerClose}>
                 <Link to={`/${text.toLowerCase()}`} style={{ textDecoration: 'none' }}>
                 <Typography className={classes.smallItem}>{text}</Typography>
